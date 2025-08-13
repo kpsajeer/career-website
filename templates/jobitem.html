@@ -1,0 +1,12 @@
+<div class="col-md-4">
+    <div class="card mb-4">
+        <div class="card-body">
+            <h3 class="card-title">{{ job['title'] }}</h3>
+            <p class="card-text">Location: {{ job['location'] }}</p>
+            {% if 'salary' in job %}
+            <p class="card-text">Salary: {{ job['salary'] }}</p>
+            {% endif %}
+            <a href="#" class="btn btn-primary">Apply Now</a>
+        </div>
+    </div>
+</div>
